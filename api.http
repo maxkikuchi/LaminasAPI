@@ -1,0 +1,26 @@
+GET http://localhost:8080/users HTTP/1.1
+//Accept: */*
+Accept: application/json
+//Accept: application/xml
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+###
+
+POST http://localhost:8080/users HTTP/1.1
+//Accept: */*
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/json
+//Content-Type: application/xml
+
+{
+    "id": 3,
+    "name":"Max4",
+    "email":"maxkikuchi@hotmail.com"
+}
+
+###
+
+DELETE http://localhost:8080/users/2 HTTP/1.1
